@@ -1,0 +1,34 @@
+unit UAlterusu;
+
+interface
+
+uses
+  Windows, Messages, SysUtils, Variants, Classes, Graphics, Controls, Forms,
+  Dialogs, StdCtrls, Mask, DBCtrls, Buttons;
+
+type
+  TalterarUsuario = class(TForm)
+    GroupBox1: TGroupBox;
+    Label1: TLabel;
+    Label2: TLabel;
+    exibir: TCheckBox;
+    BitBtn1: TBitBtn;
+    BitBtn2: TBitBtn;
+    DBEdit1: TDBEdit;
+    DBEdit2: TDBEdit;
+  private
+    { Private declarations }
+  public
+    { Public declarations }
+  end;
+
+var
+  alterarUsuario: TalterarUsuario;
+
+implementation
+
+uses UTabelas;
+
+{$R *.dfm}
+
+end.
